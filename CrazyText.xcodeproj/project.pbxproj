@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA098F2C1344CCB3001C9383 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA098F2B1344CCB3001C9383 /* Cocoa.framework */; };
+		CA098F2E1344CCB3001C9383 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA098F2D1344CCB3001C9383 /* MacRuby.framework */; };
+		CA098F351344CCB3001C9383 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA098F331344CCB3001C9383 /* InfoPlist.strings */; };
+		CA098F381344CCB3001C9383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA098F371344CCB3001C9383 /* main.m */; };
+		CA098F3C1344CCB3001C9383 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA098F3A1344CCB3001C9383 /* MainMenu.xib */; };
+		CA098F3F1344CCB3001C9383 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = CA098F3E1344CCB3001C9383 /* rb_main.rb */; };
+		CA098F411344CCB3001C9383 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = CA098F401344CCB3001C9383 /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA098F271344CCB3001C9383 /* CrazyText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA098F2B1344CCB3001C9383 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CA098F2D1344CCB3001C9383 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		CA098F321344CCB3001C9383 /* CrazyText-Info.plist */ = {isa = PBXFileReference; path = "CrazyText-Info.plist"; sourceTree = "<group>"; };
+		CA098F341344CCB3001C9383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA098F361344CCB3001C9383 /* CrazyText-Prefix.pch */ = {isa = PBXFileReference; path = "CrazyText-Prefix.pch"; sourceTree = "<group>"; };
+		CA098F371344CCB3001C9383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA098F3B1344CCB3001C9383 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CA098F3E1344CCB3001C9383 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		CA098F401344CCB3001C9383 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA098F241344CCB3001C9383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA098F2C1344CCB3001C9383 /* Cocoa.framework in Frameworks */,
+				CA098F2E1344CCB3001C9383 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA098F1C1344CCB3001C9383 = {
+			isa = PBXGroup;
+			children = (
+				CA098F301344CCB3001C9383 /* CrazyText */,
+				CA098F2A1344CCB3001C9383 /* Frameworks */,
+				CA098F281344CCB3001C9383 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA098F281344CCB3001C9383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA098F271344CCB3001C9383 /* CrazyText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA098F2A1344CCB3001C9383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA098F2B1344CCB3001C9383 /* Cocoa.framework */,
+				CA098F2D1344CCB3001C9383 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA098F301344CCB3001C9383 /* CrazyText */ = {
+			isa = PBXGroup;
+			children = (
+				CA098F401344CCB3001C9383 /* AppDelegate.rb */,
+				CA098F391344CCB3001C9383 /* Resources */,
+				CA098F3D1344CCB3001C9383 /* Other Sources */,
+				CA098F311344CCB3001C9383 /* Supporting Files */,
+			);
+			path = CrazyText;
+			sourceTree = "<group>";
+		};
+		CA098F311344CCB3001C9383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA098F321344CCB3001C9383 /* CrazyText-Info.plist */,
+				CA098F331344CCB3001C9383 /* InfoPlist.strings */,
+				CA098F361344CCB3001C9383 /* CrazyText-Prefix.pch */,
+				CA098F371344CCB3001C9383 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA098F391344CCB3001C9383 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA098F3A1344CCB3001C9383 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CA098F3D1344CCB3001C9383 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CA098F3E1344CCB3001C9383 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		CA098F2F1344CCB3001C9383 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = CA098F471344CCB3001C9383 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		CA098F261344CCB3001C9383 /* CrazyText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA098F441344CCB3001C9383 /* Build configuration list for PBXNativeTarget "CrazyText" */;
+			buildPhases = (
+				CA098F231344CCB3001C9383 /* Sources */,
+				CA098F241344CCB3001C9383 /* Frameworks */,
+				CA098F251344CCB3001C9383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrazyText;
+			productName = CrazyText;
+			productReference = CA098F271344CCB3001C9383 /* CrazyText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA098F1E1344CCB3001C9383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "xu han";
+			};
+			buildConfigurationList = CA098F211344CCB3001C9383 /* Build configuration list for PBXProject "CrazyText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA098F1C1344CCB3001C9383;
+			productRefGroup = CA098F281344CCB3001C9383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA098F261344CCB3001C9383 /* CrazyText */,
+				CA098F2F1344CCB3001C9383 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA098F251344CCB3001C9383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA098F351344CCB3001C9383 /* InfoPlist.strings in Resources */,
+				CA098F3C1344CCB3001C9383 /* MainMenu.xib in Resources */,
+				CA098F3F1344CCB3001C9383 /* rb_main.rb in Resources */,
+				CA098F411344CCB3001C9383 /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA098F231344CCB3001C9383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA098F381344CCB3001C9383 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA098F331344CCB3001C9383 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA098F341344CCB3001C9383 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA098F3A1344CCB3001C9383 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA098F3B1344CCB3001C9383 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA098F421344CCB3001C9383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA098F431344CCB3001C9383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA098F451344CCB3001C9383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyText/CrazyText-Prefix.pch";
+				INFOPLIST_FILE = "CrazyText/CrazyText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA098F461344CCB3001C9383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyText/CrazyText-Prefix.pch";
+				INFOPLIST_FILE = "CrazyText/CrazyText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CA098F481344CCB3001C9383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		CA098F491344CCB3001C9383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA098F211344CCB3001C9383 /* Build configuration list for PBXProject "CrazyText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA098F421344CCB3001C9383 /* Debug */,
+				CA098F431344CCB3001C9383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA098F441344CCB3001C9383 /* Build configuration list for PBXNativeTarget "CrazyText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA098F451344CCB3001C9383 /* Debug */,
+				CA098F461344CCB3001C9383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CA098F471344CCB3001C9383 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA098F481344CCB3001C9383 /* Debug */,
+				CA098F491344CCB3001C9383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA098F1E1344CCB3001C9383 /* Project object */;
+}
