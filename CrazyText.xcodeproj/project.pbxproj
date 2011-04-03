@@ -14,19 +14,21 @@
 		CA098F3C1344CCB3001C9383 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA098F3A1344CCB3001C9383 /* MainMenu.xib */; };
 		CA098F3F1344CCB3001C9383 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = CA098F3E1344CCB3001C9383 /* rb_main.rb */; };
 		CA098F411344CCB3001C9383 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = CA098F401344CCB3001C9383 /* AppDelegate.rb */; };
+		CA098F4B1344CF4E001C9383 /* TextConverter.rb in Resources */ = {isa = PBXBuildFile; fileRef = CA098F4A1344CF4E001C9383 /* TextConverter.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA098F271344CCB3001C9383 /* CrazyText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA098F2B1344CCB3001C9383 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA098F2D1344CCB3001C9383 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
-		CA098F321344CCB3001C9383 /* CrazyText-Info.plist */ = {isa = PBXFileReference; path = "CrazyText-Info.plist"; sourceTree = "<group>"; };
+		CA098F321344CCB3001C9383 /* CrazyText-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrazyText-Info.plist"; sourceTree = "<group>"; };
 		CA098F341344CCB3001C9383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CA098F361344CCB3001C9383 /* CrazyText-Prefix.pch */ = {isa = PBXFileReference; path = "CrazyText-Prefix.pch"; sourceTree = "<group>"; };
+		CA098F361344CCB3001C9383 /* CrazyText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyText-Prefix.pch"; sourceTree = "<group>"; };
 		CA098F371344CCB3001C9383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA098F3B1344CCB3001C9383 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CA098F3E1344CCB3001C9383 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		CA098F401344CCB3001C9383 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		CA098F4A1344CF4E001C9383 /* TextConverter.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TextConverter.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				CA098F391344CCB3001C9383 /* Resources */,
 				CA098F3D1344CCB3001C9383 /* Other Sources */,
 				CA098F311344CCB3001C9383 /* Supporting Files */,
+				CA098F4A1344CF4E001C9383 /* TextConverter.rb */,
 			);
 			path = CrazyText;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				CA098F3C1344CCB3001C9383 /* MainMenu.xib in Resources */,
 				CA098F3F1344CCB3001C9383 /* rb_main.rb in Resources */,
 				CA098F411344CCB3001C9383 /* AppDelegate.rb in Resources */,
+				CA098F4B1344CF4E001C9383 /* TextConverter.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
