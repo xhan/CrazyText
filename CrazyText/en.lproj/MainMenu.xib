@@ -1379,7 +1379,7 @@
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="399212022"/>
 									<reference key="NSDocView" ref="399212022"/>
-									<object class="NSColor" key="NSBGColor">
+									<object class="NSColor" key="NSBGColor" id="339762386">
 										<int key="NSColorSpace">6</int>
 										<string key="NSCatalogName">System</string>
 										<string key="NSColorName">controlColor</string>
@@ -1599,6 +1599,32 @@
 							<int key="NSvFlags">266</int>
 							<object class="NSMutableArray" key="NSSubviews">
 								<bool key="EncodedWithXMLCoder">YES</bool>
+								<object class="NSTextField" id="874710609">
+									<reference key="NSNextResponder" ref="623877016"/>
+									<int key="NSvFlags">268</int>
+									<string key="NSFrame">{{17, 0}, {38, 17}}</string>
+									<reference key="NSSuperview" ref="623877016"/>
+									<reference key="NSWindow"/>
+									<bool key="NSEnabled">YES</bool>
+									<object class="NSTextFieldCell" key="NSCell" id="750887403">
+										<int key="NSCellFlags">68288064</int>
+										<int key="NSCellFlags2">272630784</int>
+										<string key="NSContents">Label</string>
+										<object class="NSFont" key="NSSupport" id="475230106">
+											<string key="NSName">LucidaGrande</string>
+											<double key="NSSize">13</double>
+											<int key="NSfFlags">1044</int>
+										</object>
+										<reference key="NSControlView" ref="874710609"/>
+										<reference key="NSBackgroundColor" ref="339762386"/>
+										<object class="NSColor" key="NSTextColor">
+											<int key="NSColorSpace">6</int>
+											<string key="NSCatalogName">System</string>
+											<string key="NSColorName">controlTextColor</string>
+											<reference key="NSColor" ref="200984012"/>
+										</object>
+									</object>
+								</object>
 								<object class="NSButton" id="527548814">
 									<reference key="NSNextResponder" ref="623877016"/>
 									<int key="NSvFlags">268</int>
@@ -1710,11 +1736,7 @@
 					<int key="NSCellFlags">-2080244224</int>
 					<int key="NSCellFlags2">134217728</int>
 					<string key="NSContents">aaaf</string>
-					<object class="NSFont" key="NSSupport">
-						<string key="NSName">LucidaGrande</string>
-						<double key="NSSize">13</double>
-						<int key="NSfFlags">1044</int>
-					</object>
+					<reference key="NSSupport" ref="475230106"/>
 					<reference key="NSControlView" ref="948319664"/>
 					<int key="NSButtonFlags">-2034482945</int>
 					<int key="NSButtonFlags2">32</int>
@@ -2536,6 +2558,14 @@
 						<reference key="destination" ref="527548814"/>
 					</object>
 					<int key="connectionID">617</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">tf_textLength</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="874710609"/>
+					</object>
+					<int key="connectionID">620</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3638,6 +3668,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="733835103"/>
 							<reference ref="527548814"/>
+							<reference ref="874710609"/>
 						</object>
 						<reference key="parent" ref="439893737"/>
 					</object>
@@ -3708,6 +3739,20 @@
 						<int key="objectID">591</int>
 						<reference key="object" ref="122623783"/>
 						<reference key="parent" ref="948319664"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">618</int>
+						<reference key="object" ref="874710609"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="750887403"/>
+						</object>
+						<reference key="parent" ref="623877016"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">619</int>
+						<reference key="object" ref="750887403"/>
+						<reference key="parent" ref="874710609"/>
 					</object>
 				</object>
 			</object>
@@ -3963,6 +4008,8 @@
 					<string>601.IBPluginDependency</string>
 					<string>602.IBPluginDependency</string>
 					<string>603.IBPluginDependency</string>
+					<string>618.IBPluginDependency</string>
+					<string>619.IBPluginDependency</string>
 					<string>72.IBPluginDependency</string>
 					<string>72.ImportedFromIB2</string>
 					<string>73.IBPluginDependency</string>
@@ -4244,6 +4291,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -4283,7 +4332,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">617</int>
+			<int key="maxID">620</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4331,10 +4380,12 @@
 							<string>convertAry</string>
 							<string>tf_result</string>
 							<string>tf_source</string>
+							<string>tf_textLength</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -4350,6 +4401,7 @@
 							<string>convertAry</string>
 							<string>tf_result</string>
 							<string>tf_source</string>
+							<string>tf_textLength</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -4368,6 +4420,10 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">tf_source</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">tf_textLength</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBToOneOutletInfo">

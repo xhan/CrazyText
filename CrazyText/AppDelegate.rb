@@ -9,6 +9,7 @@
 class AppDelegate
     attr_accessor :window, :tf_source, :tf_result
     attr_accessor :convertAry, :btnCurEffect
+    attr_accessor :tf_textLength
     
     def initialize
       @convertAry = []
@@ -77,6 +78,7 @@ class AppDelegate
       str = tf_source.textStorage.string
       result = @converter.run(@selected_effect["method"], str)
       tf_result.setStringValue(result)
+      tf_textLength.setStringValue(result.length.to_s)
     end
     
     def onEffectChanged(sender)
