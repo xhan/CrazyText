@@ -137,7 +137,7 @@ class TextConverter
     array_goal = abc_key.scan(/./m)
      return  nil if array_goal.count != 26*2
     
-    (0..25).each do |i|
+    (0..51).each do |i|
       table[@ary_abc[i]] = array_goal[i]
     end
     origin.scan(/./m).map{|c| table[c] ? table[c] : c}.join

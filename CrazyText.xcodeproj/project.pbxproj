@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA020B721349CB4300B799FC /* icon_crazytext.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA020B711349CB4300B799FC /* icon_crazytext.icns */; };
 		CA098F2C1344CCB3001C9383 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA098F2B1344CCB3001C9383 /* Cocoa.framework */; };
 		CA098F2E1344CCB3001C9383 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA098F2D1344CCB3001C9383 /* MacRuby.framework */; };
 		CA098F351344CCB3001C9383 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA098F331344CCB3001C9383 /* InfoPlist.strings */; };
@@ -15,9 +16,22 @@
 		CA098F3F1344CCB3001C9383 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = CA098F3E1344CCB3001C9383 /* rb_main.rb */; };
 		CA098F411344CCB3001C9383 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = CA098F401344CCB3001C9383 /* AppDelegate.rb */; };
 		CA098F4B1344CF4E001C9383 /* TextConverter.rb in Resources */ = {isa = PBXBuildFile; fileRef = CA098F4A1344CF4E001C9383 /* TextConverter.rb */; };
+		CA366E61134E1B4C000873A1 /* DarkBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA366E60134E1B4C000873A1 /* DarkBtnCell.m */; };
+		CA366E6C134E2DC6000873A1 /* board1.png in Resources */ = {isa = PBXBuildFile; fileRef = CA366E6B134E2DC6000873A1 /* board1.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CA366E75134E3A35000873A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA098F1E1344CCB3001C9383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA098F261344CCB3001C9383;
+			remoteInfo = CrazyText;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CA020B711349CB4300B799FC /* icon_crazytext.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon_crazytext.icns; path = ../icon_crazytext.icns; sourceTree = "<group>"; };
 		CA098F271344CCB3001C9383 /* CrazyText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA098F2B1344CCB3001C9383 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA098F2D1344CCB3001C9383 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -29,6 +43,9 @@
 		CA098F3E1344CCB3001C9383 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		CA098F401344CCB3001C9383 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		CA098F4A1344CF4E001C9383 /* TextConverter.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TextConverter.rb; sourceTree = "<group>"; };
+		CA366E5F134E1B4C000873A1 /* DarkBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkBtnCell.h; sourceTree = "<group>"; };
+		CA366E60134E1B4C000873A1 /* DarkBtnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkBtnCell.m; sourceTree = "<group>"; };
+		CA366E6B134E2DC6000873A1 /* board1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +95,8 @@
 				CA098F3D1344CCB3001C9383 /* Other Sources */,
 				CA098F311344CCB3001C9383 /* Supporting Files */,
 				CA098F4A1344CF4E001C9383 /* TextConverter.rb */,
+				CA366E5F134E1B4C000873A1 /* DarkBtnCell.h */,
+				CA366E60134E1B4C000873A1 /* DarkBtnCell.m */,
 			);
 			path = CrazyText;
 			sourceTree = "<group>";
@@ -96,6 +115,8 @@
 		CA098F391344CCB3001C9383 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CA020B711349CB4300B799FC /* icon_crazytext.icns */,
+				CA366E6B134E2DC6000873A1 /* board1.png */,
 				CA098F3A1344CCB3001C9383 /* MainMenu.xib */,
 			);
 			name = Resources;
@@ -120,6 +141,7 @@
 			);
 			buildToolPath = /usr/local/bin/macruby_deploy;
 			dependencies = (
+				CA366E76134E3A35000873A1 /* PBXTargetDependency */,
 			);
 			name = Deployment;
 			passBuildSettingsInEnvironment = 1;
@@ -181,6 +203,8 @@
 				CA098F3F1344CCB3001C9383 /* rb_main.rb in Resources */,
 				CA098F411344CCB3001C9383 /* AppDelegate.rb in Resources */,
 				CA098F4B1344CF4E001C9383 /* TextConverter.rb in Resources */,
+				CA020B721349CB4300B799FC /* icon_crazytext.icns in Resources */,
+				CA366E6C134E2DC6000873A1 /* board1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,10 +216,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA098F381344CCB3001C9383 /* main.m in Sources */,
+				CA366E61134E1B4C000873A1 /* DarkBtnCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA366E76134E3A35000873A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA098F261344CCB3001C9383 /* CrazyText */;
+			targetProxy = CA366E75134E3A35000873A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA098F331344CCB3001C9383 /* InfoPlist.strings */ = {
@@ -220,7 +253,8 @@
 		CA098F421344CCB3001C9383 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: xu han";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -238,7 +272,8 @@
 		CA098F431344CCB3001C9383 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: xu han";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -312,6 +347,7 @@
 				CA098F461344CCB3001C9383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA098F471344CCB3001C9383 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -320,6 +356,7 @@
 				CA098F491344CCB3001C9383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

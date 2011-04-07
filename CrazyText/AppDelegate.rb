@@ -10,7 +10,7 @@ class AppDelegate
     attr_accessor :window, :tf_source, :tf_result
     attr_accessor :convertAry, :btnCurEffect
     attr_accessor :tf_textLength
-    
+    attr_accessor :tf_currentEffect
     def initialize
       @convertAry = []
       @convertAry.push(
@@ -39,14 +39,32 @@ class AppDelegate
       
     end
     
-    def applicationDidFinishLaunching(a_notification)
-        # Insert code here to initialize your application
-        @converter = TextConverter.new
-        @isExpand = false
-        triggle_effects(@isExpand,false)
-        setEffectByName(@selected_effect["name"])        
+    def awakeFromNib
+        @window.center
     end
     
+    def applicationDidFinishLaunching(a_notification)
+        # Insert code here to initialize your application
+        
+        @converter = TextConverter.new
+        @isExpand = false
+        #        triggle_effects(@isExpand,false)
+        setEffectByName(@selected_effect["name"])        
+        
+        @window.makeFirstResponder(@tf_source)
+        @tf_source.insertText("Enter Text Here!  →→→")
+        @tf_source.setSelectedRange(NSRange.new(0,@tf_source.textStorage.string.length))
+        @tf_result.setStringValue("Enter Text Below! ↓↓↓")
+    end
+    
+    # TODO: applicationShouldHandleReopen not works
+    def applicationShouldHandleReopen(the_application, k)   
+        @window.makeKeyAndOrderFront
+    end
+    
+    def applicationShouldTerminateAfterLastWindowClosed(app)
+        true
+    end
     
     def triggle_effects(_isExpand,isAnimation)
        # height =  _isExpand ? 575 : 575 -230
@@ -90,7 +108,8 @@ class AppDelegate
       value = @convertAry.select { |hash| hash["name"] == name }
       if value.count >= 1
         @selected_effect = value.first
-        btnCurEffect.setTitle(@selected_effect["name"])
+        tf_currentEffect.setStringValue(@selected_effect["name"])
+          #        btnCurEffect.setTitle(@selected_effect["name"])
         textDidChange(nil)        
       end
 
