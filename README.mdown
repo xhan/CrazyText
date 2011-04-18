@@ -1,0 +1,8 @@
+About CrazyText
+===============
+A MacOSX app written in MacRuby to make some funny effects to your texts.  
+it's available on Mac App Store [link](http://itunes.apple.com/us/app/crazy-text/id431122700?mt=12)
+
+ScreenShot
+===============
+![ScreenShot](http://a1.mzstatic.com/us/r1000/054/Purple/46/da/90/mzl.fbweriey.800x500-75.jpg)
